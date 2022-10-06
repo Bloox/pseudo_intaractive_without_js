@@ -1,3 +1,4 @@
+#example
 struct = [ #here is structure of you file
     #index 0:type("text|choice") index 1:[look at the comments]
     ["text","Welcome {icon}! do you like it?"], #type:str text, you can use {name} to insert thing declaret in props
