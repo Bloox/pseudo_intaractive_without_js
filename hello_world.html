@@ -1,0 +1,125 @@
+
+<!--Automoticly Generated-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Emoji&display=swap');
+    :root:has([value="[none]"]:checked){
+	--fg0:red;
+	--fg1:#888;
+	--bg:black;
+	--p-icon:"🍓";
+	--o0-0:"True";
+	--o0-1:"False";
+	--o1-0:"2";
+	--o1-1:"4";
+	--o1-2:"8";
+	--o1-3:"16";
+	--o1-4:"32";
+
+}
+:root:has([value="blue"]:checked){
+	--fg0:blue;
+	--fg1:#888;
+	--bg:black;
+	--p-icon:"🫐";
+	--p-name:"berry";
+	--o0-0:"False";
+	--o0-1:"True";
+	--o1-0:"22";
+	--o1-1:"44";
+	--o1-2:"88";
+	--o1-3:"1616";
+	--o1-4:"322";
+
+}
+.ins-icon::after{
+	color:var(--fg0);
+	content:var(--p-icon);
+}
+
+    
+    select{
+        color:#fff;
+        background-color: #0000;
+        border:none;
+    }
+    h1 {
+        color:var(--fg0)
+    }
+    html {
+        background-color:var(--bg);
+        color:var(--fg1);
+        width:800px;
+        border:1px solid var(--fg0);
+        font-family: 'Fira Code','Noto Emoji', monospace;
+    }
+    .choice{ 
+        margin:20px 0;
+    }
+    .choice:has(:checked) > .choic {
+        display:none;
+        
+    }
+    .choice:has(:checked){
+        font-style: italic;
+        color:var(--fg0);
+    }
+    .choice:has(:checked):before{
+        content:">";
+        padding-right:20px;;
+    }
+    #c0{
+	--cc-0:var(--o0-0);
+	--cc-1:var(--o0-1);
+}
+#c1{
+	--cc-0:var(--o1-0);
+	--cc-1:var(--o1-1);
+	--cc-2:var(--o1-2);
+	--cc-3:var(--o1-3);
+	--cc-4:var(--o1-4);
+}
+.choice:has(.choic>.cc-0:checked)::after{
+	content:"\a" var(--cc-0);
+}
+.choice:has(.choic>.cc-1:checked)::after{
+	content:"\a" var(--cc-1);
+}
+.choice:has(.choic>.cc-2:checked)::after{
+	content:"\a" var(--cc-2);
+}
+.choice:has(.choic>.cc-3:checked)::after{
+	content:"\a" var(--cc-3);
+}
+.choice:has(.choic>.cc-4:checked)::after{
+	content:"\a" var(--cc-4);
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+	choose food:<select>
+		<option value="[none]">red</option>
+		<option value="blue">blue</option>
+	</select><br><br>Welcome <i class="ins-icon"></i>! do you like it?
+<div class="choice" id="c0">
+<div class="choic">
+yes:<input type="checkbox" name="yes" class="cc-0">
+no:<input type="checkbox" name="no" class="cc-1">
+</div>
+</div><b>Text in bold<b/>
+<div class="choice" id="c1">
+<div class="choic">
+0:<input type="checkbox" name="0" class="cc-0">
+1:<input type="checkbox" name="1" class="cc-1">
+2:<input type="checkbox" name="2" class="cc-2">
+3:<input type="checkbox" name="3" class="cc-3">
+4:<input type="checkbox" name="4" class="cc-4">
+</div>
+</div>
+</body>

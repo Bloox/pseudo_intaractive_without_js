@@ -1,0 +1,91 @@
+
+<!--Automoticly Generated-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Emoji&display=swap');
+    :root:has([value="[none]"]:checked){
+	--fg0:red;
+	--fg1:#888;
+	--bg:black;
+	--p-icon:"🍓";
+	--o0-0:"True";
+	--o0-1:"False";
+
+}
+:root:has([value="blue"]:checked){
+	--fg0:blue;
+	--fg1:#888;
+	--bg:black;
+	--p-icon:"🫐";
+	--p-name:"berry";
+	--o0-0:"False";
+	--o0-1:"True";
+
+}
+.ins-icon::after{
+	color:var(--fg0);
+	content:var(--p-icon);
+}
+
+    
+    select{
+        color:#fff;
+        background-color: #0000;
+        border:none;
+    }
+    h1 {
+        color:var(--fg0)
+    }
+    html {
+        background-color:var(--bg);
+        color:var(--fg1);
+        width:800px;
+        border:1px solid var(--fg0);
+        font-family: 'Fira Code','Noto Emoji', monospace;
+    }
+    .choice{ 
+        margin:20px 0;
+    }
+    .choice:has(:checked) > .choic {
+        display:none;
+        
+    }
+    .choice:has(:checked){
+        font-style: italic;
+        color:var(--fg0);
+    }
+    .choice:has(:checked):before{
+        content:">";
+        padding-right:20px;;
+    }
+    #c0{
+	--cc-0:var(--o0-0);
+	--cc-1:var(--o0-1);
+}
+.choice:has(.choic>.cc-0:checked)::after{
+	content:"\a" var(--cc-0);
+}
+.choice:has(.choic>.cc-1:checked)::after{
+	content:"\a" var(--cc-1);
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+	choose food:<select>
+		<option value="[none]">red</option>
+		<option value="blue">blue</option>
+	</select><br><br>Welcome <i class="ins-icon"></i>! do you like it?
+<div class="choice" id="c0">
+<div class="choic">
+yes:<input type="checkbox" name="yes" class="cc-0">
+no:<input type="checkbox" name="no" class="cc-1">
+</div>
+</div><b>Text in bold<b/>
+
+</body>
